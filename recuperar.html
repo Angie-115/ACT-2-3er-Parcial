@@ -1,0 +1,25 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recuperación de Contraseña</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="login-container">
+        <h2>Recuperar Contraseña</h2>
+        <form onsubmit="return recuperarPassword()">
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email" placeholder="Ingresa tu email para recuperar tu contraseña">
+            <button type="submit">Recuperar Contraseña</button>
+            <p id="error-message"></p>
+            <p id="success-message"></p>
+        </form>
+        
+        <p>¿Ya tienes una cuenta? <a href="login.html">Inicia sesión aquí</a></p>
+    </div>
+    <script src="recuperar.js"></script>
+</body>
+</html>
